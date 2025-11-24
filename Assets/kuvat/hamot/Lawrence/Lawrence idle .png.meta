@@ -1,0 +1,1248 @@
+fileFormatVersion: 2
+guid: ed2cdf38877681044aaf519ea331a31c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8373350008656193541
+    second: Lawrence idle _0
+  - first:
+      213: -8235448386776485283
+    second: Lawrence idle _1
+  - first:
+      213: -8879919346247691032
+    second: Lawrence idle _2
+  - first:
+      213: 7635290080897596912
+    second: Lawrence idle _3
+  - first:
+      213: -4218397737006851952
+    second: Lawrence idle _4
+  - first:
+      213: 6895368582204559625
+    second: Lawrence idle _5
+  - first:
+      213: -8520984151433615134
+    second: Lawrence idle _6
+  - first:
+      213: 1079105206654160658
+    second: Lawrence idle _7
+  - first:
+      213: -1122372138785947130
+    second: Lawrence idle _8
+  - first:
+      213: -6005979413459645644
+    second: Lawrence idle _9
+  - first:
+      213: -792351451774276096
+    second: Lawrence idle _10
+  - first:
+      213: 269064678331857591
+    second: Lawrence idle _11
+  - first:
+      213: 4558311657385306862
+    second: Lawrence idle _12
+  - first:
+      213: -4544849084340629755
+    second: Lawrence idle _13
+  - first:
+      213: 1550720243970409051
+    second: Lawrence idle _14
+  - first:
+      213: 5005916966272205836
+    second: Lawrence idle _15
+  - first:
+      213: 8753599922653643210
+    second: Lawrence idle _16
+  - first:
+      213: -8847378436822980685
+    second: Lawrence idle _17
+  - first:
+      213: -3289584760408500946
+    second: Lawrence idle _18
+  - first:
+      213: -4703352419113465412
+    second: Lawrence idle _19
+  - first:
+      213: -8754904269571005632
+    second: Lawrence idle _20
+  - first:
+      213: -255256601293456406
+    second: Lawrence idle _21
+  - first:
+      213: -76637677488893838
+    second: Lawrence idle _22
+  - first:
+      213: -1562635116452695429
+    second: Lawrence idle _23
+  - first:
+      213: 8555051498784819958
+    second: Lawrence idle _24
+  - first:
+      213: 6822896260959611817
+    second: Lawrence idle _25
+  - first:
+      213: -8176720755170953102
+    second: Lawrence idle _26
+  - first:
+      213: -761192857829425625
+    second: Lawrence idle _27
+  - first:
+      213: -6297139735907389638
+    second: Lawrence idle _28
+  - first:
+      213: -506460549591387502
+    second: Lawrence idle _29
+  - first:
+      213: 4825396730158157412
+    second: Lawrence idle _30
+  - first:
+      213: -1250926879175266380
+    second: Lawrence idle _31
+  - first:
+      213: -6190654631950873598
+    second: Lawrence idle _32
+  - first:
+      213: 953038985414648224
+    second: Lawrence idle _33
+  - first:
+      213: 6344192014225670066
+    second: Lawrence idle _34
+  - first:
+      213: -3689598405155106793
+    second: Lawrence idle _35
+  - first:
+      213: -3082536228193515197
+    second: Lawrence idle _36
+  - first:
+      213: 8469970989705652100
+    second: Lawrence idle _37
+  - first:
+      213: -8809275160818846626
+    second: Lawrence idle _38
+  - first:
+      213: 8377223330749461608
+    second: Lawrence idle _39
+  - first:
+      213: 2397389565798112698
+    second: Lawrence idle _40
+  - first:
+      213: -1522692497542237628
+    second: Lawrence idle _41
+  - first:
+      213: 2615774336759545173
+    second: Lawrence idle _42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lawrence idle _0
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50867fd087d143470800000000000000
+      internalID: 8373350008656193541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _1
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52bf14535fc5bd80800000000000000
+      internalID: -8235448386776485283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _2
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e499c4076034c480800000000000000
+      internalID: -8879919346247691032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _3
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdf6f400eff5f960800000000000000
+      internalID: 7635290080897596912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _4
+      rect:
+        serializedVersion: 2
+        x: 3929
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0981564bb9d3575c0800000000000000
+      internalID: -4218397737006851952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _5
+      rect:
+        serializedVersion: 2
+        x: 4621
+        y: 1429
+        width: 563
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90111b9313541bf50800000000000000
+      internalID: 6895368582204559625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _6
+      rect:
+        serializedVersion: 2
+        x: 5545
+        y: 1429
+        width: 539
+        height: 1109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8e0157f026fb980800000000000000
+      internalID: -8520984151433615134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _7
+      rect:
+        serializedVersion: 2
+        x: 6445
+        y: 1429
+        width: 539
+        height: 1109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f45e5d770c9fe00800000000000000
+      internalID: 1079105206654160658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _8
+      rect:
+        serializedVersion: 2
+        x: 7345
+        y: 1429
+        width: 539
+        height: 1109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6024ed18c788c60f0800000000000000
+      internalID: -1122372138785947130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _9
+      rect:
+        serializedVersion: 2
+        x: 8245
+        y: 1429
+        width: 539
+        height: 1109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bcd646b8976aca0800000000000000
+      internalID: -6005979413459645644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _10
+      rect:
+        serializedVersion: 2
+        x: 9145
+        y: 1429
+        width: 539
+        height: 1109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00eaabb7d800105f0800000000000000
+      internalID: -792351451774276096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _11
+      rect:
+        serializedVersion: 2
+        x: 10045
+        y: 1429
+        width: 539
+        height: 1109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba339d36e8ebb300800000000000000
+      internalID: 269064678331857591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _12
+      rect:
+        serializedVersion: 2
+        x: 10921
+        y: 1429
+        width: 563
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea29f92d40624f30800000000000000
+      internalID: 4558311657385306862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _13
+      rect:
+        serializedVersion: 2
+        x: 12029
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f0e1266d37de0c0800000000000000
+      internalID: -4544849084340629755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _14
+      rect:
+        serializedVersion: 2
+        x: 12929
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b520dd788d3458510800000000000000
+      internalID: 1550720243970409051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _15
+      rect:
+        serializedVersion: 2
+        x: 13829
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0481c555f6987540800000000000000
+      internalID: 5005916966272205836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _16
+      rect:
+        serializedVersion: 2
+        x: 14729
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac148a740c80b7970800000000000000
+      internalID: 8753599922653643210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _17
+      rect:
+        serializedVersion: 2
+        x: 15629
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b727b7ef2cc73580800000000000000
+      internalID: -8847378436822980685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _18
+      rect:
+        serializedVersion: 2
+        x: 16529
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e251051e61c0952d0800000000000000
+      internalID: -3289584760408500946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _19
+      rect:
+        serializedVersion: 2
+        x: 17429
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9844de4e55abeb0800000000000000
+      internalID: -4703352419113465412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _20
+      rect:
+        serializedVersion: 2
+        x: 18329
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0436ba9c3f4508680800000000000000
+      internalID: -8754904269571005632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _21
+      rect:
+        serializedVersion: 2
+        x: 19229
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb74593975257cf0800000000000000
+      internalID: -255256601293456406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _22
+      rect:
+        serializedVersion: 2
+        x: 20129
+        y: 1429
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2701dd8307abfeef0800000000000000
+      internalID: -76637677488893838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _23
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72394a04a7605ae0800000000000000
+      internalID: -1562635116452695429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _24
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa0e34f206a9b670800000000000000
+      internalID: 8555051498784819958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _25
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aba6d5000ccfae50800000000000000
+      internalID: 6822896260959611817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _26
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278b8789bc3768e80800000000000000
+      internalID: -8176720755170953102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _27
+      rect:
+        serializedVersion: 2
+        x: 3929
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e3387f023bf65f0800000000000000
+      internalID: -761192857829425625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _28
+      rect:
+        serializedVersion: 2
+        x: 4829
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f2e3c16c01c98a0800000000000000
+      internalID: -6297139735907389638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _29
+      rect:
+        serializedVersion: 2
+        x: 5729
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2923bd040d0b8f8f0800000000000000
+      internalID: -506460549591387502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _30
+      rect:
+        serializedVersion: 2
+        x: 6629
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e886192c047f240800000000000000
+      internalID: 4825396730158157412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _31
+      rect:
+        serializedVersion: 2
+        x: 7529
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf25ce81a0d3aee0800000000000000
+      internalID: -1250926879175266380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _32
+      rect:
+        serializedVersion: 2
+        x: 8429
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c01776960661aa0800000000000000
+      internalID: -6190654631950873598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _33
+      rect:
+        serializedVersion: 2
+        x: 9329
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a12db668efd93d00800000000000000
+      internalID: 953038985414648224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _34
+      rect:
+        serializedVersion: 2
+        x: 10229
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf7ac226091b0850800000000000000
+      internalID: 6344192014225670066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _35
+      rect:
+        serializedVersion: 2
+        x: 11129
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710d1e08cc9ebccc0800000000000000
+      internalID: -3689598405155106793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _36
+      rect:
+        serializedVersion: 2
+        x: 12029
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349c047e1a1a835d0800000000000000
+      internalID: -3082536228193515197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _37
+      rect:
+        serializedVersion: 2
+        x: 12929
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487e4434db16b8570800000000000000
+      internalID: 8469970989705652100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _38
+      rect:
+        serializedVersion: 2
+        x: 13829
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5478be2aea2fb580800000000000000
+      internalID: -8809275160818846626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _39
+      rect:
+        serializedVersion: 2
+        x: 14729
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864bf612c30e14470800000000000000
+      internalID: 8377223330749461608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _40
+      rect:
+        serializedVersion: 2
+        x: 15629
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abddf91bb1d354120800000000000000
+      internalID: 2397389565798112698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _41
+      rect:
+        serializedVersion: 2
+        x: 16529
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442b7d5bd3f4edae0800000000000000
+      internalID: -1522692497542237628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lawrence idle _42
+      rect:
+        serializedVersion: 2
+        x: 17429
+        y: 98
+        width: 355
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55db22b76e81d4420800000000000000
+      internalID: 2615774336759545173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lawrence idle _0: 8373350008656193541
+      Lawrence idle _1: -8235448386776485283
+      Lawrence idle _10: -792351451774276096
+      Lawrence idle _11: 269064678331857591
+      Lawrence idle _12: 4558311657385306862
+      Lawrence idle _13: -4544849084340629755
+      Lawrence idle _14: 1550720243970409051
+      Lawrence idle _15: 5005916966272205836
+      Lawrence idle _16: 8753599922653643210
+      Lawrence idle _17: -8847378436822980685
+      Lawrence idle _18: -3289584760408500946
+      Lawrence idle _19: -4703352419113465412
+      Lawrence idle _2: -8879919346247691032
+      Lawrence idle _20: -8754904269571005632
+      Lawrence idle _21: -255256601293456406
+      Lawrence idle _22: -76637677488893838
+      Lawrence idle _23: -1562635116452695429
+      Lawrence idle _24: 8555051498784819958
+      Lawrence idle _25: 6822896260959611817
+      Lawrence idle _26: -8176720755170953102
+      Lawrence idle _27: -761192857829425625
+      Lawrence idle _28: -6297139735907389638
+      Lawrence idle _29: -506460549591387502
+      Lawrence idle _3: 7635290080897596912
+      Lawrence idle _30: 4825396730158157412
+      Lawrence idle _31: -1250926879175266380
+      Lawrence idle _32: -6190654631950873598
+      Lawrence idle _33: 953038985414648224
+      Lawrence idle _34: 6344192014225670066
+      Lawrence idle _35: -3689598405155106793
+      Lawrence idle _36: -3082536228193515197
+      Lawrence idle _37: 8469970989705652100
+      Lawrence idle _38: -8809275160818846626
+      Lawrence idle _39: 8377223330749461608
+      Lawrence idle _4: -4218397737006851952
+      Lawrence idle _40: 2397389565798112698
+      Lawrence idle _41: -1522692497542237628
+      Lawrence idle _42: 2615774336759545173
+      Lawrence idle _5: 6895368582204559625
+      Lawrence idle _6: -8520984151433615134
+      Lawrence idle _7: 1079105206654160658
+      Lawrence idle _8: -1122372138785947130
+      Lawrence idle _9: -6005979413459645644
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
