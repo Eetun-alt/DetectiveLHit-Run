@@ -485,7 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc421e05d28bf0459dcbfe7a39ab336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuClick
-  sceneToLoad: Kartta
+  sceneToLoad: profiilit
 --- !u!65 &862120818
 BoxCollider:
   m_ObjectHideFlags: 0
