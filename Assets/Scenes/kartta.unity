@@ -358,6 +358,7 @@ GameObject:
   - component: {fileID: 1282344704}
   - component: {fileID: 1282344703}
   - component: {fileID: 1282344702}
+  - component: {fileID: 1282344706}
   m_Layer: 0
   m_Name: takaisin_nappi (1)_0
   m_TagString: Untagged
@@ -472,6 +473,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282344706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282344701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a0a99b2ca42cc4bb8dc1f9d3e36087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHover
+  normalSprite: {fileID: 6806254571875076158, guid: d106a2dab4ddb214e93f9c16e7dee575, type: 3}
+  highlightSprite: {fileID: 586869668915587814, guid: b672093977298ce42bf2dde69d9efdcd, type: 3}
 --- !u!1 &2086367570
 GameObject:
   m_ObjectHideFlags: 0
