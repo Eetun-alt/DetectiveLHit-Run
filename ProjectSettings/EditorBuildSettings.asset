@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/profiilit.unity
     guid: 1480454a24740534ea9a33c78259ce32
   - enabled: 1
+    path: Assets/Scenes/pukuhuone.unity
+    guid: 23ce763537ccbf24cb921a5e36d9eaf9
+  - enabled: 1
     path: Assets/Scenes/end credits'.unity
     guid: 20ca8f9db1ced564eaf8c1f3557dd057
   m_configObjects:
