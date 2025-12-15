@@ -221,6 +221,8 @@ GameObject:
   - component: {fileID: 721953918}
   - component: {fileID: 721953917}
   - component: {fileID: 721953916}
+  - component: {fileID: 721953921}
+  - component: {fileID: 721953920}
   m_Layer: 0
   m_Name: takaisin_nappi (1)_0
   m_TagString: Untagged
@@ -328,6 +330,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &721953920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721953915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.7800007, y: 4.5599995, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &721953921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721953915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a0a99b2ca42cc4bb8dc1f9d3e36087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHover
+  normalSprite: {fileID: 6806254571875076158, guid: d106a2dab4ddb214e93f9c16e7dee575, type: 3}
+  highlightSprite: {fileID: 586869668915587814, guid: b672093977298ce42bf2dde69d9efdcd, type: 3}
 --- !u!1 &1300763467
 GameObject:
   m_ObjectHideFlags: 0
