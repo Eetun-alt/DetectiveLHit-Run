@@ -197,6 +197,7 @@ Transform:
   m_ConstrainProportionsScale: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Children:
   - {fileID: 761760135}
   m_Father: {fileID: 784356659}
@@ -421,6 +422,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -698,6 +701,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784356658}
   m_CullTransparentMesh: 1
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 --- !u!1 &933494915
@@ -1305,6 +1309,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285276471}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -2005,10 +2011,14 @@ SceneRoots:
   - {fileID: 1993268888}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 1395199808}
   - {fileID: 1217605332}
   - {fileID: 933494917}
   - {fileID: 508435065}
+=======
+  - {fileID: 91360881}
+>>>>>>> Stashed changes
 =======
   - {fileID: 91360881}
 >>>>>>> Stashed changes
