@@ -1,16 +1,21 @@
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ProfileManager : MonoBehaviour
 {
     public static ProfileManager Instance;
 
-    void Awake()
+    public string[] profiles = new string[3];
+    public int[] profileSkins = new int[3]; // 👈 UUSI
+    public int selectedProfileIndex = -1;
+
+    private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            LoadProfiles();
         }
         else
         {
@@ -18,60 +23,38 @@ public class ProfileManager : MonoBehaviour
         }
     }
 
-    public void SaveProfile(int slot, ProfileData data)
+    void LoadProfiles()
     {
-        string json = JsonUtility.ToJson(data);
-        PlayerPrefs.SetString("profile_" + slot, json);
-        PlayerPrefs.Save();
-    }
-
-    public ProfileData LoadProfile(int slot)
-    {
-        string key = "profile_" + slot;
-
-        if (!PlayerPrefs.HasKey(key))
-            return null;
-
-        string json = PlayerPrefs.GetString(key);
-        return JsonUtility.FromJson<ProfileData>(json);
-    }
-
-    public void DeleteProfile(int slot)
-    {
-        PlayerPrefs.DeleteKey("profile_" + slot);
-    }
-
-    //Hakee kaikki olemassa olevat profiilit
-    public List<ProfileData> GetAllProfiles(int maxSlots = 3)
-    {
-        List<ProfileData> profiles = new List<ProfileData>();
-
-        for (int slot = 1; slot <= maxSlots; slot++)
+        for (int i = 0; i < profiles.Length; i++)
         {
-            ProfileData data = LoadProfile(slot);
-            if (data != null)
-            {
-                profiles.Add(data);
-            }
+            profiles[i] = PlayerPrefs.GetString("ProfileName_" + i, "Tyhjä");
+            profileSkins[i] = PlayerPrefs.GetInt("ProfileSkin_" + i, -1); // -1 = ei skiniä
         }
-
-        return profiles;
     }
 
-    //tiedot sloteista
-    public Dictionary<int, ProfileData> GetAllProfilesWithSlot(int maxSlots = 3)
+    public void SaveProfiles()
     {
-        Dictionary<int, ProfileData> profiles = new Dictionary<int, ProfileData>();
-
-        for (int slot = 1; slot <= maxSlots; slot++)
+        for (int i = 0; i < profiles.Length; i++)
         {
-            ProfileData data = LoadProfile(slot);
-            if (data != null)
-            {
-                profiles.Add(slot, data);
-            }
+            PlayerPrefs.SetString("ProfileName_" + i, profiles[i]);
+            PlayerPrefs.SetInt("ProfileSkin_" + i, profileSkins[i]);
         }
+    }
 
-        return profiles;
+    public void SelectProfile(int index)
+    {
+        selectedProfileIndex = index;
+
+        if (profiles[index] == "Tyhjä")
+            SceneManager.LoadScene("Pukuhuone");
+        else
+            SceneManager.LoadScene("MainGame");
+    }
+
+    public void CreateProfile(string name, int skinIndex)
+    {
+        profiles[selectedProfileIndex] = name;
+        profileSkins[selectedProfileIndex] = skinIndex;
+        SaveProfiles();
     }
 }
