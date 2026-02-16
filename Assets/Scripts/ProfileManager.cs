@@ -1,21 +1,18 @@
-ï»¿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ProfileManager : MonoBehaviour
 {
     public static ProfileManager Instance;
 
-    public string[] profiles = new string[3];
-    public int[] profileSkins = new int[3]; // ðŸ‘ˆ UUSI
-    public int selectedProfileIndex = -1;
+    public int selectedSlot; // 1, 2 tai 3
 
-    private void Awake()
+    void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            LoadProfiles();
         }
         else
         {
@@ -23,38 +20,39 @@ public class ProfileManager : MonoBehaviour
         }
     }
 
-    void LoadProfiles()
+    // Kutsutaan kun profiilin nappia painetaan
+    public void SelectProfile(int slotNumber)
     {
-        for (int i = 0; i < profiles.Length; i++)
+        selectedSlot = slotNumber;
+
+        if (PlayerPrefs.HasKey("profile_" + slotNumber))
         {
-            profiles[i] = PlayerPrefs.GetString("ProfileName_" + i, "TyhjÃ¤");
-            profileSkins[i] = PlayerPrefs.GetInt("ProfileSkin_" + i, -1); // -1 = ei skiniÃ¤
+            Debug.Log("Profiili löytyy, ladataan peli...");
+            SceneManager.LoadScene("kartta");
         }
-    }
-
-    public void SaveProfiles()
-    {
-        for (int i = 0; i < profiles.Length; i++)
-        {
-            PlayerPrefs.SetString("ProfileName_" + i, profiles[i]);
-            PlayerPrefs.SetInt("ProfileSkin_" + i, profileSkins[i]);
-        }
-    }
-
-    public void SelectProfile(int index)
-    {
-        selectedProfileIndex = index;
-
-        if (profiles[index] == "TyhjÃ¤")
-            SceneManager.LoadScene("Pukuhuone");
         else
-            SceneManager.LoadScene("MainGame");
+        {
+            Debug.Log("Profiili tyhjä, kysytään luodaanko uusi.");
+            UIManager.Instance.ShowCreatePopup(slotNumber);
+        }
     }
 
-    public void CreateProfile(string name, int skinIndex)
+    public void CreateNewProfile()
     {
-        profiles[selectedProfileIndex] = name;
-        profileSkins[selectedProfileIndex] = skinIndex;
-        SaveProfiles();
+        SceneManager.LoadScene("pukuhuone");
+    }
+
+    public void SaveProfileName(string profileName)
+    {
+        PlayerPrefs.SetString("profile_" + selectedSlot, profileName);
+        PlayerPrefs.Save();
+    }
+
+    public string GetProfileName(int slot)
+    {
+        if (PlayerPrefs.HasKey("profile_" + slot))
+            return PlayerPrefs.GetString("profile_" + slot);
+
+        return "Tyhjä";
     }
 }

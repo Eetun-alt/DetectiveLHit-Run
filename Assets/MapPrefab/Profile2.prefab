@@ -148,7 +148,6 @@ GameObject:
   - component: {fileID: 1839395312973611460}
   - component: {fileID: 579159487927182470}
   - component: {fileID: 8491997802145209820}
-  - component: {fileID: 7655437798771706763}
   m_Layer: 5
   m_Name: Profile2
   m_TagString: Untagged
@@ -258,17 +257,3 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7655437798771706763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8955533193753109763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7491e5bbfd4b4f54d8b74edbf69fe893, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ProfileButton
-  profileIndex: 2
-  profileText: {fileID: 217247913574221460}
