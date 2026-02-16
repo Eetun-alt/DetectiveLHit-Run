@@ -192,11 +192,11 @@ Transform:
   m_GameObject: {fileID: 91360878}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.41501, y: 0.13631, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1877126216}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &112785948 stripped
 RectTransform:
@@ -220,7 +220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &113955369
 RectTransform:
   m_ObjectHideFlags: 0
@@ -472,6 +472,8 @@ GameObject:
   - component: {fileID: 455302411}
   - component: {fileID: 455302410}
   - component: {fileID: 455302409}
+  - component: {fileID: 455302412}
+  - component: {fileID: 455302413}
   m_Layer: 5
   m_Name: "Kyll\xE4-nappi"
   m_TagString: Untagged
@@ -542,7 +544,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 455302410}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 8dc421e05d28bf0459dcbfe7a39ab336, type: 3}
+        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: pukuhuone
+          m_BoolArgument: 0
+        m_CallState: 0
 --- !u!114 &455302410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,6 +595,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455302407}
   m_CullTransparentMesh: 1
+--- !u!114 &455302412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455302407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc421e05d28bf0459dcbfe7a39ab336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenuClick
+  sceneToLoad: pukuhuone
+--- !u!61 &455302413
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455302407}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.5866089, y: -0.18416595}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 303.03168, y: 151.89577}
+  m_EdgeRadius: 0
 --- !u!1 &570198754 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4769959597555211292, guid: 174d86e680deae942ae1b07db59ea407, type: 3}
@@ -1196,7 +1269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1329511178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1264,11 +1337,11 @@ Transform:
   m_GameObject: {fileID: 1329511177}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.38591, y: 0.13971, z: 0}
+  m_LocalPosition: {x: 0.029099941, y: 0.003399998, z: 0}
   m_LocalScale: {x: 1.616864, y: 1.6005764, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1877126216}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1414551469 stripped
 RectTransform:
@@ -1470,6 +1543,8 @@ GameObject:
   - component: {fileID: 1670185506}
   - component: {fileID: 1670185505}
   - component: {fileID: 1670185504}
+  - component: {fileID: 1670185507}
+  - component: {fileID: 1670185508}
   m_Layer: 5
   m_Name: Ei-nappi
   m_TagString: Untagged
@@ -1540,7 +1615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1670185505}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 8dc421e05d28bf0459dcbfe7a39ab336, type: 3}
+        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: profiilit
+          m_BoolArgument: 0
+        m_CallState: 0
 --- !u!114 &1670185505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1579,6 +1666,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670185502}
   m_CullTransparentMesh: 1
+--- !u!114 &1670185507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670185502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc421e05d28bf0459dcbfe7a39ab336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenuClick
+  sceneToLoad: profiilit
+--- !u!61 &1670185508
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670185502}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.31012726, y: 0.03479004}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 303.3438, y: 151.64359}
+  m_EdgeRadius: 0
 --- !u!1 &1858442863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,7 +1786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1877126216
 Transform:
   m_ObjectHideFlags: 0
@@ -1656,9 +1802,7 @@ Transform:
   m_Children:
   - {fileID: 1858442865}
   - {fileID: 160612043}
-  - {fileID: 91360881}
   - {fileID: 721953919}
-  - {fileID: 1329511179}
   - {fileID: 1993268888}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2395,5 +2539,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1300763470}
-  - {fileID: 1877126216}
+  - {fileID: 91360881}
+  - {fileID: 1329511179}
   - {fileID: 113955369}
+  - {fileID: 1877126216}
