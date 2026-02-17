@@ -186,6 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 506245573}
   - component: {fileID: 506245572}
+  - component: {fileID: 506245574}
   m_Layer: 0
   m_Name: Lawrence idle _0
   m_TagString: Untagged
@@ -266,6 +267,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &506245574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506245571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c207876e1677fae42a7e9576529a3e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterHealth
+  maxHealth: 100
+  currentHealth: 100
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &632551932
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632551934}
   - component: {fileID: 632551933}
+  - component: {fileID: 632551935}
   m_Layer: 0
   m_Name: doggiepeli_0
   m_TagString: Untagged
@@ -356,6 +378,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &632551935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632551932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c207876e1677fae42a7e9576529a3e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterHealth
+  maxHealth: 100
+  currentHealth: 100
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &675542410
 GameObject:
   m_ObjectHideFlags: 0
