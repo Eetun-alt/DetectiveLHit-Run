@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Hallitsee taistelun kulkua ja kutsuu hyökkäyksiä.
@@ -10,6 +11,10 @@ public class BattleManager : MonoBehaviour
     public LawrenceAttack playerAttack;  // Lawrence
     public CharacterHealth playerHealth; // Lawrence Health
     public CharacterHealth enemyHealth;  // Vihollinen Health
+
+    [Header("Scene Transition")]
+    [Tooltip("Nimi scenestä johon siirrytään taistelun jälkeen")]
+    public string nextSceneName = "Kartta";
 
     [Header("State")]
     public bool isPlayerTurn = true;
@@ -139,17 +144,84 @@ public class BattleManager : MonoBehaviour
         
         Debug.Log("Enemy's turn!");
         
-        // TODO: Lisää vihollisen AI-logiikka tähän
-        // Esimerkiksi: Random hyökkäys
-        // int randomAttack = Random.Range(0, 3);
-        // if (randomAttack == 0)
-        //     enemyAttack.UseBasicAttack();
-        // else if (randomAttack == 1)
-        //     enemyAttack.UseDefend();
-        // etc.
+        // Vihollisen AI-logiikka - tasapainotettu pelaajan kanssa
+        ExecuteEnemyAI();
         
-        // Väliaikaisesti: Pelaajan vuoro alkaa uudelleen 2 sekunnin päästä
-        Invoke(nameof(StartPlayerTurn), 2f);
+        // Pelaajan vuoro alkaa 1.5 sekunnin päästä
+        Invoke(nameof(StartPlayerTurn), 1.5f);
+    }
+
+    /// <summary>
+    /// Vihollisen tekoäly - tasapainotettu vaikeustaso
+    /// </summary>
+    private void ExecuteEnemyAI()
+    {
+        if (playerHealth == null || enemyHealth == null) return;
+        
+        int playerHP = playerHealth.currentHealth;
+        int playerMaxHP = playerHealth.maxHealth;
+        int enemyHP = enemyHealth.currentHealth;
+        int enemyMaxHP = enemyHealth.maxHealth;
+        
+        // Laske pelaajan HP prosenttina
+        float playerHPPercent = (float)playerHP / playerMaxHP;
+        float enemyHPPercent = (float)enemyHP / enemyMaxHP;
+        
+        int attackChoice;
+        
+        // Strategia: Jos pelaaja on low HP, käytä voimakasta hyökkäystä
+        if (playerHPPercent < 0.25f)
+        {
+            // 70% todennäköisyys voimakkaaseen hyökkäykseen
+            attackChoice = Random.value < 0.7f ? 0 : Random.Range(1, 4);
+        }
+        // Strategia: Jos vihollinen on low HP, parannus tai puolustus
+        else if (enemyHPPercent < 0.3f)
+        {
+            // 50% todennäköisyys parannukseen tai puolustukseen
+            attackChoice = Random.value < 0.5f ? 3 : Random.Range(0, 3);
+        }
+        // Normaali tilanne: Satunnainen valinta
+        else
+        {
+            attackChoice = Random.Range(0, 4);
+        }
+        
+        // Suorita valittu hyökkäys
+        switch (attackChoice)
+        {
+            case 0: // Basic attack - 12-18 damage (hieman heikompi kuin pelaajan 15)
+                int basicDamage = Random.Range(12, 19);
+                playerHealth.TakeDamage(basicDamage);
+                Debug.Log($"Enemy uses Basic Attack! Deals {basicDamage} damage.");
+                break;
+                
+            case 1: // Heavy attack - 20-25 damage (harvinainen)
+                int heavyDamage = Random.Range(20, 26);
+                playerHealth.TakeDamage(heavyDamage);
+                Debug.Log($"Enemy uses Heavy Attack! Deals {heavyDamage} damage.");
+                break;
+                
+            case 2: // Quick attack - 8-12 damage + mahdollisuus toiseen iskuun
+                int quickDamage = Random.Range(8, 13);
+                playerHealth.TakeDamage(quickDamage);
+                Debug.Log($"Enemy uses Quick Attack! Deals {quickDamage} damage.");
+                
+                // 30% todennäköisyys toiselle iskulle
+                if (Random.value < 0.3f)
+                {
+                    int bonusDamage = Random.Range(5, 9);
+                    playerHealth.TakeDamage(bonusDamage);
+                    Debug.Log($"Enemy follows up with a second hit! +{bonusDamage} bonus damage.");
+                }
+                break;
+                
+            case 3: // Heal - parantaa itseään
+                int healAmount = (int)(enemyMaxHP * 0.2f); // 20% max HP
+                enemyHealth.currentHealth = Mathf.Min(enemyHP + healAmount, enemyMaxHP);
+                Debug.Log($"Enemy uses Heal! Recovered {healAmount} HP. (Now at {enemyHealth.currentHealth}/{enemyMaxHP})");
+                break;
+        }
     }
 
     private void StartPlayerTurn()
@@ -166,5 +238,12 @@ public class BattleManager : MonoBehaviour
         isPlayerTurn = false;
         onBattleEnd?.Invoke();
         Debug.Log("Battle ended.");
+        
+        // Siirry seuraavaan sceneen
+        if (!string.IsNullOrEmpty(nextSceneName))
+        {
+            Debug.Log($"Loading scene: {nextSceneName}");
+            SceneManager.LoadScene(nextSceneName);
+        }
     }
 }
