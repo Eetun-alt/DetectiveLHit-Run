@@ -24,9 +24,13 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
-        // Pyyhi vanhat efektit kun taistelu alkaa
+        // Älä nollaa cooldowneja - pidä ne alkuarvoissa
+        // Disguise = 2, Ragebait = 3, Charge = 2 ovat käytettävissä vasta kun cooldown = 0
         if (playerAttack != null)
+        {
             playerAttack.ResetChargeAttack();
+            // ResetCooldowns() POISTETTU - cooldownit jäävät alkuarvoihin
+        }
     }
 
     void Update()
@@ -134,6 +138,20 @@ public class BattleManager : MonoBehaviour
         onPlayerTurnEnd?.Invoke();
         Debug.Log("Player turn ended.");
         
+        // Päivitä cooldownit
+        if (playerAttack != null)
+        {
+            playerAttack.UpdateCooldowns();
+            
+            // Tarkista ja sovella bleed damage
+            int bleedDamage = playerAttack.GetBleedDamage();
+            if (bleedDamage > 0 && enemyHealth != null && !enemyHealth.IsDead)
+            {
+                enemyHealth.TakeDamage(bleedDamage);
+                Debug.Log($"Bleed damage applied: {bleedDamage} damage to enemy.");
+            }
+        }
+        
         // Async esimerkki: vihollisen vuoro alkaa 1 sekunnin päästä
         Invoke(nameof(StartEnemyTurn), 1f);
     }
@@ -231,6 +249,9 @@ public class BattleManager : MonoBehaviour
         isPlayerTurn = true;
         onPlayerTurnStart?.Invoke();
         Debug.Log("Player's turn!");
+        
+        // Tarkista onko pelaajalla bleed (jos vihollinen käyttää Ragebaitia)
+        // Tämä on varalla jos haluat lisätä viholliselle samanlaisen hyökkäyksen
     }
 
     private void EndBattle()

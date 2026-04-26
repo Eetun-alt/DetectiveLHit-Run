@@ -10,11 +10,30 @@ public class LawrenceAttack : MonoBehaviour
     public CharacterHealth ownHealth;
     public CharacterHealth enemyHealth;
     
-    [Header("Attack Stats")]
+    [Header("Attack Stats - Muokattavissa Inspectorissa")]
+    [Tooltip("Curbstomp: Perusiskun damage (15)")]
     public int curbstompDamage = 15;
-    public int ragebaitDamage = 5; // bleed damage per round
+    
+    [Tooltip("Ragebait: Bleed damage per kierros (5)")]
+    public int ragebaitDamage = 5;
+    
+    [Tooltip("Ragebait: Kuinka monta kierrosta bleed kestää (2)")]
     public int ragebaitDuration = 2;
-    public float chargeAttackHealPercent = 0.5f; // 50% HP recovery
+    
+    [Tooltip("Charge Attack: Heal prosenttina max HP (50%)")]
+    public float chargeAttackHealPercent = 0.5f;
+    
+    [Tooltip("Disguise: Accuracy vähennys prosentteina (25%)")]
+    public float disguiseAccuracyReduction = 0.25f;
+    
+    [Tooltip("Disguise: Kuinka monta kierrosta kestää (2)")]
+    public int disguiseDuration = 2;
+    
+    [Header("Cooldowns (kierroksia) - Alkuarvot")]
+    public int curbstompCooldown = 0;
+    public int disguiseCooldown = 2;  // Ei voi käyttää heti
+    public int ragebaitCooldown = 3;  // Ei voi käyttää heti
+    public int chargeAttackCooldown = 2;  // Ei voi käyttää heti
     
     // Status effects tracking
     private StatusEffectManager statusEffects = new StatusEffectManager();
@@ -36,23 +55,75 @@ public class LawrenceAttack : MonoBehaviour
     }
 
     /// <summary>
-    /// Disguise: Opponent's hit chance is reduced by 25% for 2 rounds.
+    /// Tarkista onko hyökkäys käytettävissä (ei cooldownia)
+    /// </summary>
+    public bool CanUseAttack(string attackName)
+    {
+        switch (attackName)
+        {
+            case "Curbstomp": return curbstompCooldown <= 0;
+            case "Disguise": return disguiseCooldown <= 0;
+            case "Ragebait": return ragebaitCooldown <= 0;
+            case "ChargeAttack": return chargeAttackCooldown <= 0;
+            default: return false;
+        }
+    }
+
+    /// <summary>
+    /// Päivitä cooldownit (kutsutaan BattleManagerista jokaisen kierroksen lopussa)
+    /// </summary>
+    public void UpdateCooldowns()
+    {
+        if (curbstompCooldown > 0) curbstompCooldown--;
+        if (disguiseCooldown > 0) disguiseCooldown--;
+        if (ragebaitCooldown > 0) ragebaitCooldown--;
+        if (chargeAttackCooldown > 0) chargeAttackCooldown--;
+        
+        Debug.Log($"Cooldowns: Curbstomp={curbstompCooldown}, Disguise={disguiseCooldown}, Ragebait={ragebaitCooldown}, Charge={chargeAttackCooldown}");
+    }
+
+    /// <summary>
+    /// Nollaa kaikki cooldownit (taistelun alussa)
+    /// </summary>
+    public void ResetCooldowns()
+    {
+        curbstompCooldown = 0;
+        disguiseCooldown = 0;
+        ragebaitCooldown = 0;
+        chargeAttackCooldown = 0;
+        Debug.Log("All cooldowns reset!");
+    }
+
+    /// <summary>
+    /// Disguise: Vihollisen osumistodennäköisyys -25% 2 kierroksen ajaksi.
     /// </summary>
     public void UseDisguise()
     {
         if (enemyHealth == null) return;
+        if (disguiseCooldown > 0)
+        {
+            Debug.LogWarning($"Disguise on cooldown! ({disguiseCooldown} kierrosta jäljellä)");
+            return;
+        }
         
-        // Add accuracy debuff to enemy
-        statusEffects.AddEffect(new StatusEffect("AccuracyDown", 2, -0.25f));
-        Debug.Log($"Lawrence uses Disguise! Enemy's accuracy reduced by 25% for 2 rounds.");
+        // Add accuracy debuff to enemy - kesto alkaa seuraavasta vihollisen vuorosta
+        statusEffects.AddEffect(new StatusEffect("AccuracyDown", disguiseDuration, -disguiseAccuracyReduction));
+        disguiseCooldown = 2; // Aseta cooldown käytön jälkeen
+        
+        Debug.Log($"Lawrence uses Disguise! Enemy's accuracy reduced by {disguiseAccuracyReduction*100}% for {disguiseDuration} rounds. (Cooldown: {disguiseCooldown})");
     }
 
     /// <summary>
-    /// Curbstomp: Lawrence's basic attack.
+    /// Curbstomp: Lawrencen perusisku.
     /// </summary>
     public void UseCurbstomp()
     {
         if (enemyHealth == null) return;
+        if (curbstompCooldown > 0)
+        {
+            Debug.LogWarning($"Curbstomp on cooldown! ({curbstompCooldown} kierrosta jäljellä)");
+            return;
+        }
 
         // Apply damage with potential accuracy check
         float accuracy = 1.0f - GetEnemyAccuracyDebuff();
@@ -67,26 +138,40 @@ public class LawrenceAttack : MonoBehaviour
         {
             Debug.Log("Lawrence uses Curbstomp, but it missed!");
         }
+        
+        curbstompCooldown = 0; // Ei cooldownia
     }
 
     /// <summary>
-    /// Ragebait: Lawrence taunts the opponent, who takes bleed damage for the next couple of turns.
+    /// Ragebait: Lawrence mumisee vastustajalle ja vastustaja ottaa bleed damagea.
     /// </summary>
     public void UseRagebait()
     {
         if (enemyHealth == null) return;
+        if (ragebaitCooldown > 0)
+        {
+            Debug.LogWarning($"Ragebait on cooldown! ({ragebaitCooldown} kierrosta jäljellä)");
+            return;
+        }
 
         // Apply bleed status effect
         statusEffects.AddEffect(new StatusEffect("Bleed", ragebaitDuration, ragebaitDamage, effectType: StatusEffectType.DoT));
-        Debug.Log($"Lawrence uses Ragebait! Enemy will take {ragebaitDamage} bleed damage for {ragebaitDuration} rounds.");
+        ragebaitCooldown = 3; // Aseta cooldown käytön jälkeen
+        
+        Debug.Log($"Lawrence uses Ragebait! Enemy will take {ragebaitDamage} bleed damage for {ragebaitDuration} rounds. (Cooldown: {ragebaitCooldown})");
     }
 
     /// <summary>
-    /// Charge attack, Young T: Lawrence recovers 50% HP. Charges up a little each round.
+    /// Charge Attack: Lawrence palauttaa 50% HP ja latautuu jokaisen kierroksen lopussa.
     /// </summary>
     public void UseChargeAttack()
     {
         if (ownHealth == null) return;
+        if (chargeAttackCooldown > 0)
+        {
+            Debug.LogWarning($"Charge Attack on cooldown! ({chargeAttackCooldown} kierrosta jäljellä)");
+            return;
+        }
 
         chargeCount++;
         
@@ -97,6 +182,8 @@ public class LawrenceAttack : MonoBehaviour
         ownHealth.currentHealth = Mathf.Min(ownHealth.currentHealth + chargedHeal, ownHealth.maxHealth);
         
         Debug.Log($"Lawrence uses Charge Attack! Recovered {chargedHeal} HP (Charge level: {chargeCount}/{maxChargeCount})");
+        
+        chargeAttackCooldown = 2; // Aseta cooldown käytön jälkeen
         
         // Reset charge after use if maxed
         if (chargeCount >= maxChargeCount)
@@ -121,10 +208,34 @@ public class LawrenceAttack : MonoBehaviour
     }
 
     /// <summary>
+    /// Hae bleed damage (kutsutaan BattleManagerista)
+    /// </summary>
+    public int GetBleedDamage()
+    {
+        StatusEffect bleedEffect = statusEffects.GetEffect("Bleed");
+        return bleedEffect != null ? (int)bleedEffect.value : 0;
+    }
+
+    /// <summary>
     /// Get current charge count for UI display.
     /// </summary>
     public int GetChargeCount() => chargeCount;
     public int GetMaxChargeCount() => maxChargeCount;
+    
+    /// <summary>
+    /// Get cooldown info for UI
+    /// </summary>
+    public int GetCooldown(string attackName)
+    {
+        switch (attackName)
+        {
+            case "Curbstomp": return curbstompCooldown;
+            case "Disguise": return disguiseCooldown;
+            case "Ragebait": return ragebaitCooldown;
+            case "ChargeAttack": return chargeAttackCooldown;
+            default: return 0;
+        }
+    }
 }
 
 /// <summary>
@@ -184,8 +295,10 @@ public class StatusEffect
     public float value; // For debuffs like accuracy reduction, or damage amounts
     public StatusEffectType effectType;
     private int currentRound = 0;
+    private bool appliedThisRound = false;
 
-    public bool IsExpired => currentRound >= durationRounds;
+    // Effect expires when currentRound > durationRounds (eli effect kestää oikeasti duration kierrosta)
+    public bool IsExpired => currentRound > durationRounds;
 
     public StatusEffect(string name, int duration, float value = 0f, StatusEffectType effectType = StatusEffectType.Debuff)
     {
@@ -198,11 +311,18 @@ public class StatusEffect
     public void Update()
     {
         currentRound++;
+        appliedThisRound = false;
     }
 
     public bool ShouldApplyDamage()
     {
-        return currentRound % 1 == 0; // Apply damage every round for DoT
+        // Apply damage once per round, starting from the round after the effect is applied
+        if (!appliedThisRound && currentRound <= durationRounds && currentRound > 0)
+        {
+            appliedThisRound = true;
+            return true;
+        }
+        return false;
     }
 }
 
