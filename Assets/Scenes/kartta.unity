@@ -356,6 +356,8 @@ GameObject:
   m_Component:
   - component: {fileID: 535351784}
   - component: {fileID: 535351783}
+  - component: {fileID: 535351786}
+  - component: {fileID: 535351785}
   m_Layer: 0
   m_Name: kartta alue homma_0 (3)
   m_TagString: Untagged
@@ -436,6 +438,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535351785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535351782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cdffd617a8c654cb8c4b83bc16ed1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Map
+  ToLevel: taistelu4
+--- !u!65 &535351786
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535351782}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4, y: 3.93, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &840922921
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +482,8 @@ GameObject:
   m_Component:
   - component: {fileID: 840922923}
   - component: {fileID: 840922922}
+  - component: {fileID: 840922925}
+  - component: {fileID: 840922924}
   m_Layer: 0
   m_Name: kartta alue homma_0 (1)
   m_TagString: Untagged
@@ -526,6 +564,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &840922924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840922921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cdffd617a8c654cb8c4b83bc16ed1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Map
+  ToLevel: taistelu2
+--- !u!65 &840922925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840922921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4, y: 3.93, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1061804627
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +862,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1326671343}
   - component: {fileID: 1326671342}
+  - component: {fileID: 1326671345}
+  - component: {fileID: 1326671344}
   m_Layer: 0
   m_Name: kartta alue homma_0 (4)
   m_TagString: Untagged
@@ -870,6 +944,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1326671344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326671341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cdffd617a8c654cb8c4b83bc16ed1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Map
+  ToLevel: taistelu5
+--- !u!65 &1326671345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326671341}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4, y: 3.93, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1704242024
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +988,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1704242026}
   - component: {fileID: 1704242025}
+  - component: {fileID: 1704242028}
+  - component: {fileID: 1704242027}
   m_Layer: 0
   m_Name: kartta alue homma_0 (2)
   m_TagString: Untagged
@@ -960,6 +1070,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1704242027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704242024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cdffd617a8c654cb8c4b83bc16ed1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Map
+  ToLevel: taistelu3
+--- !u!65 &1704242028
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704242024}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4, y: 3.93, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1727484042
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,6 +1114,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1727484044}
   - component: {fileID: 1727484043}
+  - component: {fileID: 1727484046}
+  - component: {fileID: 1727484045}
   m_Layer: 0
   m_Name: kartta alue homma_0
   m_TagString: Untagged
@@ -1050,6 +1196,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727484045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727484042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cdffd617a8c654cb8c4b83bc16ed1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Map
+  ToLevel: taistelu1
+--- !u!65 &1727484046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727484042}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4, y: 3.93, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2086367570
 GameObject:
   m_ObjectHideFlags: 0
